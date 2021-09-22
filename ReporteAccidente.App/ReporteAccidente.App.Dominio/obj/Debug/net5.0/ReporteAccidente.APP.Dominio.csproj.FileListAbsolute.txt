@@ -1,0 +1,12 @@
+C:\Reportes\ReporteAccidente.App\ReporteAccidente.App.Dominio\bin\Debug\net5.0\ReporteAccidente.APP.Dominio.deps.json
+C:\Reportes\ReporteAccidente.App\ReporteAccidente.App.Dominio\bin\Debug\net5.0\ReporteAccidente.APP.Dominio.dll
+C:\Reportes\ReporteAccidente.App\ReporteAccidente.App.Dominio\bin\Debug\net5.0\ref\ReporteAccidente.APP.Dominio.dll
+C:\Reportes\ReporteAccidente.App\ReporteAccidente.App.Dominio\bin\Debug\net5.0\ReporteAccidente.APP.Dominio.pdb
+C:\Reportes\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ReporteAccidente.APP.Dominio.csproj.AssemblyReference.cache
+C:\Reportes\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ReporteAccidente.APP.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Reportes\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ReporteAccidente.APP.Dominio.AssemblyInfoInputs.cache
+C:\Reportes\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ReporteAccidente.APP.Dominio.AssemblyInfo.cs
+C:\Reportes\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ReporteAccidente.APP.Dominio.csproj.CoreCompileInputs.cache
+C:\Reportes\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ReporteAccidente.APP.Dominio.dll
+C:\Reportes\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ref\ReporteAccidente.APP.Dominio.dll
+C:\Reportes\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ReporteAccidente.APP.Dominio.pdb
