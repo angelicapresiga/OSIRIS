@@ -10,3 +10,15 @@ C:\Reportes\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\R
 C:\Reportes\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ReporteAccidente.APP.Dominio.dll
 C:\Reportes\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ref\ReporteAccidente.APP.Dominio.dll
 C:\Reportes\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ReporteAccidente.APP.Dominio.pdb
+C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Dominio\bin\Debug\net5.0\ReporteAccidente.APP.Dominio.deps.json
+C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Dominio\bin\Debug\net5.0\ReporteAccidente.APP.Dominio.dll
+C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Dominio\bin\Debug\net5.0\ref\ReporteAccidente.APP.Dominio.dll
+C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Dominio\bin\Debug\net5.0\ReporteAccidente.APP.Dominio.pdb
+C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ReporteAccidente.APP.Dominio.csproj.AssemblyReference.cache
+C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ReporteAccidente.APP.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ReporteAccidente.APP.Dominio.AssemblyInfoInputs.cache
+C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ReporteAccidente.APP.Dominio.AssemblyInfo.cs
+C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ReporteAccidente.APP.Dominio.csproj.CoreCompileInputs.cache
+C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ReporteAccidente.APP.Dominio.dll
+C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ref\ReporteAccidente.APP.Dominio.dll
+C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Dominio\obj\Debug\net5.0\ReporteAccidente.APP.Dominio.pdb

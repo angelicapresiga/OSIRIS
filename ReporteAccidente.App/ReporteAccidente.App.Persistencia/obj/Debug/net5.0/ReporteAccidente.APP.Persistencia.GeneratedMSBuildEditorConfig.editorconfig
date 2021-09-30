@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = ReporteAccidente.APP.Persistencia
-build_property.ProjectDir = C:\Reportes\ReporteAccidente.App\ReporteAccidente.App.Persistencia\
+build_property.ProjectDir = C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Persistencia\

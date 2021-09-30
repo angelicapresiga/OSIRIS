@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S4k9yLu8njQjbJT3qODS/IFZXzmudYwrMi0btD4rqn3M90b4Dt/4eVBSPwiUBukZllYKWte97BweEUnp8pBJtA==",
+  "dgSpecHash": "hyVHRyXNdsfCRiYzWHTqijxNx2eIJSrqWcB9g/BIKOgKX7R9nNPe6IYVmc8U9JPhnkItfs7r/WatgY0qBAv+VQ==",
   "success": true,
-  "projectFilePath": "C:\\Reportes\\ReporteAccidente.App\\ReporteAccidente.App.Persistencia\\ReporteAccidente.APP.Persistencia.csproj",
+  "projectFilePath": "C:\\Reportes\\OSIRIS-1\\ReporteAccidente.App\\ReporteAccidente.App.Persistencia\\ReporteAccidente.APP.Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

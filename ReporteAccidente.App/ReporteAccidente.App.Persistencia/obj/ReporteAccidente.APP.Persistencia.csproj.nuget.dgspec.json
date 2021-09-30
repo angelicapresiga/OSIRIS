@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Reportes\\ReporteAccidente.App\\ReporteAccidente.App.Persistencia\\ReporteAccidente.APP.Persistencia.csproj": {}
+    "C:\\Reportes\\OSIRIS-1\\ReporteAccidente.App\\ReporteAccidente.App.Persistencia\\ReporteAccidente.APP.Persistencia.csproj": {}
   },
   "projects": {
-    "C:\\Reportes\\ReporteAccidente.App\\ReporteAccidente.App.Dominio\\ReporteAccidente.APP.Dominio.csproj": {
+    "C:\\Reportes\\OSIRIS-1\\ReporteAccidente.App\\ReporteAccidente.App.Dominio\\ReporteAccidente.APP.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Reportes\\ReporteAccidente.App\\ReporteAccidente.App.Dominio\\ReporteAccidente.APP.Dominio.csproj",
+        "projectUniqueName": "C:\\Reportes\\OSIRIS-1\\ReporteAccidente.App\\ReporteAccidente.App.Dominio\\ReporteAccidente.APP.Dominio.csproj",
         "projectName": "ReporteAccidente.APP.Dominio",
-        "projectPath": "C:\\Reportes\\ReporteAccidente.App\\ReporteAccidente.App.Dominio\\ReporteAccidente.APP.Dominio.csproj",
+        "projectPath": "C:\\Reportes\\OSIRIS-1\\ReporteAccidente.App\\ReporteAccidente.App.Dominio\\ReporteAccidente.APP.Dominio.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Reportes\\ReporteAccidente.App\\ReporteAccidente.App.Dominio\\obj\\",
+        "outputPath": "C:\\Reportes\\OSIRIS-1\\ReporteAccidente.App\\ReporteAccidente.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Reportes\\ReporteAccidente.App\\ReporteAccidente.App.Persistencia\\ReporteAccidente.APP.Persistencia.csproj": {
+    "C:\\Reportes\\OSIRIS-1\\ReporteAccidente.App\\ReporteAccidente.App.Persistencia\\ReporteAccidente.APP.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Reportes\\ReporteAccidente.App\\ReporteAccidente.App.Persistencia\\ReporteAccidente.APP.Persistencia.csproj",
+        "projectUniqueName": "C:\\Reportes\\OSIRIS-1\\ReporteAccidente.App\\ReporteAccidente.App.Persistencia\\ReporteAccidente.APP.Persistencia.csproj",
         "projectName": "ReporteAccidente.APP.Persistencia",
-        "projectPath": "C:\\Reportes\\ReporteAccidente.App\\ReporteAccidente.App.Persistencia\\ReporteAccidente.APP.Persistencia.csproj",
+        "projectPath": "C:\\Reportes\\OSIRIS-1\\ReporteAccidente.App\\ReporteAccidente.App.Persistencia\\ReporteAccidente.APP.Persistencia.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Reportes\\ReporteAccidente.App\\ReporteAccidente.App.Persistencia\\obj\\",
+        "outputPath": "C:\\Reportes\\OSIRIS-1\\ReporteAccidente.App\\ReporteAccidente.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -90,8 +90,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Reportes\\ReporteAccidente.App\\ReporteAccidente.App.Dominio\\ReporteAccidente.APP.Dominio.csproj": {
-                "projectPath": "C:\\Reportes\\ReporteAccidente.App\\ReporteAccidente.App.Dominio\\ReporteAccidente.APP.Dominio.csproj"
+              "C:\\Reportes\\OSIRIS-1\\ReporteAccidente.App\\ReporteAccidente.App.Dominio\\ReporteAccidente.APP.Dominio.csproj": {
+                "projectPath": "C:\\Reportes\\OSIRIS-1\\ReporteAccidente.App\\ReporteAccidente.App.Dominio\\ReporteAccidente.APP.Dominio.csproj"
               }
             }
           }

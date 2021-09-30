@@ -9,6 +9,8 @@ namespace ReporteAccidente.App.Persistencia
         Accidente UpdateAccidente(Accidente accidente);
         void DeleteAccidente(int idAccidente);
         Accidente GetAccidente(int idAccidente);
+        
+
     }
 
 }
