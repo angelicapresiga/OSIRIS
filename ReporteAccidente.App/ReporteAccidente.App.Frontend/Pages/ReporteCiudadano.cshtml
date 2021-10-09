@@ -21,7 +21,11 @@
             <td>@ciudadano.Sexo</td>
             <td>@ciudadano.Edad</td>
             <td>@ciudadano.TipoAgenteVial</td>
-         
+            <td>
+              <a asp-page="./EditCiudadano" asp-route-ciudadanoId="@ciudadano.Id" >
+                <i class="bi bi-pencil-square"></i>
+              </a>
+            </td>
         </tr>
     }
   </tbody>

@@ -7,7 +7,7 @@ namespace ReporteAccidente.App.Persistencia
 
     public class RepositorioAgente:IRepositorioAgente
     {
-      
+        
         private readonly AppContext _appContext;
         public RepositorioAgente(AppContext appContext)
         {

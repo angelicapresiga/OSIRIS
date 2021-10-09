@@ -75,3 +75,5 @@ C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Frontend\bin\Debu
 C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Frontend\bin\Debug\net5.0\ReporteAccidente.APP.Dominio.pdb
 C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Frontend\bin\Debug\net5.0\ReporteAccidente.APP.Persistencia.pdb
 C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Frontend\obj\Debug\net5.0\Razor\Pages\EdtiAccidente.cshtml.g.cs
+C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Frontend\obj\Debug\net5.0\Razor\Pages\EditCiudadano.cshtml.g.cs
+C:\Reportes\OSIRIS-1\ReporteAccidente.App\ReporteAccidente.App.Frontend\obj\Debug\net5.0\Razor\Pages\EditVehiculo.cshtml.g.cs

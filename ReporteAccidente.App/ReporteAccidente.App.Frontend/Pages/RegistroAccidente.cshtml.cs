@@ -12,7 +12,7 @@ namespace ReporteAccidente.App.Frontend.Pages
     public class RegistroAccidenteModel : PageModel
     {
         private readonly IRepositorioAccidente repositorioAccidente;
-
+        private static IRepositorioAccidente _repoAccidente = new RepositorioAccidente(new Persistencia.AppContext());
         public IEnumerable<Accidente> Accidentes{get;set;}
 
         public RegistroAccidenteModel(IRepositorioAccidente repositorioAccidente)
@@ -22,7 +22,7 @@ namespace ReporteAccidente.App.Frontend.Pages
 
         public void OnGet()
         {
-            Accidentes=repositorioAccidente.Obtener();
+            Accidentes=_repoAccidente.GetAllAccidentes();
 
         }
     }

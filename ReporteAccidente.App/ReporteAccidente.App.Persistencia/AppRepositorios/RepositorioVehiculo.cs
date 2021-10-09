@@ -8,21 +8,6 @@ namespace ReporteAccidente.App.Persistencia
     public class RepositorioVehiculo:IRepositorioVehiculo
     {
         
-        List<Vehiculo> Vehiculos1;
-        public RepositorioVehiculo()
-        {
-            Vehiculos1= new List<Vehiculo>()
-            {
-                new Vehiculo{Id=1 , Placa="bre-525", Marca="Mazda", Modelo=1996},
-                new Vehiculo{Id=2 , Placa="rnc-420", Marca="renault", Modelo=2004},
-                new Vehiculo{Id=3 , Placa="bon-007", Marca="BMW", Modelo=2021}
-            };
-        }
-
-        public IEnumerable<Vehiculo> Obtener()
-        {
-            return Vehiculos1;
-        }
         private readonly AppContext _appContext;
         public RepositorioVehiculo(AppContext appContext)
         {

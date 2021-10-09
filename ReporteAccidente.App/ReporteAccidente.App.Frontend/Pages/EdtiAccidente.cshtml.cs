@@ -12,6 +12,7 @@ namespace ReporteAccidente.App.Frontend.Pages
     public class EdtiAccidenteModel : PageModel
     {
         private readonly IRepositorioAccidente repositorioAccidente;
+        private static IRepositorioAccidente _repoAccidente = new RepositorioAccidente(new Persistencia.AppContext());
        [BindProperty]
         public Accidente accidente { get; set; }
              
@@ -22,7 +23,7 @@ namespace ReporteAccidente.App.Frontend.Pages
 
         public IActionResult OnGet(int accidenteId)
         {
-            accidente = repositorioAccidente.buscar(accidenteId);
+            accidente = _repoAccidente.GetAccidente(accidenteId);
             if (accidenteId == null)
             {
                 return RedirectToPage("./NotFound");
@@ -35,7 +36,7 @@ namespace ReporteAccidente.App.Frontend.Pages
 
         public IActionResult OnPost()
         {
-            accidente = repositorioAccidente.update(accidente);
+            accidente = _repoAccidente.UpdateAccidente(accidente);
             return Page();
         }
     }

@@ -1,0 +1,30 @@
+﻿@page
+@model ReporteAccidente.App.Frontend.Pages.EditCiudadanoModel
+@{
+}
+<h2>Edicion </h2>
+<form method="post" >
+    <input type="hidden" asp-for="ciudadano.Id"/>
+     
+    <div class="form-group">
+        <label asp-for="ciudadano.Nombre"></label>
+        <input asp-for="ciudadano.Nombre" class="form-control">
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="ciudadano.Sexo"></label>
+        <input asp-for="ciudadano.Sexo" class="form-control">
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="ciudadano.Edad"></label>
+        <input asp-for="ciudadano.Edad" class="form-control">
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="ciudadano.TipoAgenteVial"></label>
+        <input asp-for="ciudadano.TipoAgenteVial" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Editar</button>
+</form>
+<a asp-page="./ReporteCiudadano" class="btn-default">Reporte Ciudadanos</a>

@@ -11,7 +11,7 @@ namespace ReporteAccidente.App.Frontend.pages
     public class ReporteVehiculoModel : PageModel
     {
         private readonly IRepositorioVehiculo repositorioVehiculo;
-
+        private static IRepositorioVehiculo _repoVehiculo = new RepositorioVehiculo(new Persistencia.AppContext());
         public IEnumerable<Vehiculo> Vehiculos{get;set;}
 
         public ReporteVehiculoModel(IRepositorioVehiculo repositorioVehiculo)
@@ -20,7 +20,7 @@ namespace ReporteAccidente.App.Frontend.pages
         }
         public void OnGet()
         {
-            Vehiculos=repositorioVehiculo.Obtener();
+            Vehiculos=_repoVehiculo.GetAllVehiculos();
         }
     }
 }

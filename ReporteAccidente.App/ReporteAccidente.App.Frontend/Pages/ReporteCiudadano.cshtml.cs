@@ -11,6 +11,7 @@ namespace ReporteAccidente.App.Frontend.pages
     public class ReporteCiudadanoModel : PageModel
     {
         private readonly IRepositorioCiudadano repositoriociudadano;
+        private static IRepositorioCiudadano _repoCiudadano = new RepositorioCiudadano(new Persistencia.AppContext());
 
         public IEnumerable<Ciudadano> Ciudadanos{get;set;}
 
@@ -21,7 +22,7 @@ namespace ReporteAccidente.App.Frontend.pages
 
         public void OnGet()
         {
-             Ciudadanos=repositoriociudadano.Obtener();
+             Ciudadanos=_repoCiudadano.GetAllCiudadanos();
         }
     }
 }

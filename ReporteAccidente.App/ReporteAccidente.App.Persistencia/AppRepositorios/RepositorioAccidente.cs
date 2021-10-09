@@ -8,39 +8,8 @@ namespace ReporteAccidente.App.Persistencia
     public class RepositorioAccidente:IRepositorioAccidente
     {
         
-        List<Accidente> Accidentes1;
-        public RepositorioAccidente()
-        {
-            Accidentes1= new List<Accidente>()
-            {
-                new Accidente{Id=1 , IdAgente=525, Latitud="-13", Longitud="-25", Direccion="cll 127 b bis 52-68", Hora="22:00"},
-                new Accidente{Id=2 , IdAgente=365, Latitud="83", Longitud="-45", Direccion="cll 12 sur 45-9", Hora="10:00"},
-                new Accidente{Id=3 , IdAgente=897, Latitud="23", Longitud="15", Direccion="crr 56 occidente -58", Hora="05:00"}
-            };
-        }
-        public Accidente update(Accidente accidenteActualizado)
-        {
-            var accidente= Accidentes1.SingleOrDefault(r => r.Id==accidenteActualizado.Id);
-            if(accidente!=null)
-            {
-                accidente.Id=accidenteActualizado.Id;
-                accidente.IdAgente=accidenteActualizado.IdAgente;
-                accidente.Latitud=accidenteActualizado.Latitud;
-                accidente.Longitud=accidenteActualizado.Longitud;
-                accidente.Direccion=accidenteActualizado.Direccion;
-                accidente.Hora=accidenteActualizado.Hora;
-            }
-            return accidente;
-        }
-        public IEnumerable<Accidente> Obtener()
-        {
-            return Accidentes1;
-        }
-
-        public Accidente buscar(int AccidenteId)
-        {
-            return Accidentes1.SingleOrDefault(s=> s.Id==AccidenteId);
-        }
+        
+       
         private readonly AppContext _appContext;
         public RepositorioAccidente(AppContext appContext)
         {
