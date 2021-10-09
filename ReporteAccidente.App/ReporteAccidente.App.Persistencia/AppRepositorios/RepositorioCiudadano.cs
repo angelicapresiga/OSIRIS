@@ -7,7 +7,22 @@ namespace ReporteAccidente.App.Persistencia
 
     public class RepositorioCiudadano:IRepositorioCiudadano
     {
-      
+        
+          List<Ciudadano> Ciudadanos1;
+        public RepositorioCiudadano()
+        {
+            Ciudadanos1= new List<Ciudadano>()
+            {
+                new Ciudadano{Id=1 , Nombre="Ivan Ochoa", Sexo="Masculino", Edad=29, TipoAgenteVial="carro"},
+                new Ciudadano{Id=1 , Nombre="Juliana Arandia", Sexo="Femenino", Edad=25, TipoAgenteVial="moto"},
+                new Ciudadano{Id=1 , Nombre="Karen", Sexo="Femenino", Edad=24, TipoAgenteVial="cicla"}
+            };
+        }
+
+        public IEnumerable<Ciudadano> Obtener()
+        {
+            return Ciudadanos1;
+        }
         private readonly AppContext _appContext;
         public RepositorioCiudadano(AppContext appContext)
         {

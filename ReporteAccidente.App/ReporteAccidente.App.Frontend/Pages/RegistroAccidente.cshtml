@@ -1,0 +1,37 @@
+﻿@page
+@model ReporteAccidente.App.Frontend.Pages.RegistroAccidenteModel
+@{
+}
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Id Agente</th>
+      <th scope="col">Latitud</th>
+      <th scope="col">Longitud</th>
+      <th scope="col">Direccion</th>
+      <th scope="col">Fecha</th>
+      <th scope="col">Hora</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var accidente in Model.Accidentes)
+    {
+        <tr>
+            <td>@accidente.Id</td>
+            <td>@accidente.IdAgente</td>
+            <td>@accidente.Latitud</td>
+            <td>@accidente.Longitud</td>
+            <td>@accidente.Direccion</td>
+            <td>@accidente.Fecha</td>
+            <td>@accidente.Hora</td>
+            <td>
+              <a asp-page="./EdtiAccidente" asp-route-accidenteId="@accidente.Id" >
+                <i class="bi bi-pencil-square"></i>
+              </a>
+            </td>
+        </tr>
+    }
+  </tbody>
+</table>

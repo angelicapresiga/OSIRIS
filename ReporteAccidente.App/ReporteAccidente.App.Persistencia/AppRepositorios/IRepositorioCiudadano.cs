@@ -4,6 +4,7 @@ namespace ReporteAccidente.App.Persistencia
 {
     public interface IRepositorioCiudadano
     {
+        IEnumerable<Ciudadano> Obtener();
         IEnumerable<Ciudadano> GetAllCiudadanos();
         Ciudadano AddCiudadano(Ciudadano ciudadano);
         Ciudadano UpdateCiudadano(Ciudadano ciudadano);

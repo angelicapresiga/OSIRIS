@@ -1,0 +1,28 @@
+﻿@page
+@model ReporteAccidente.App.Frontend.pages.ReporteCiudadanoModel
+@{
+}
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Sexo</th>
+      <th scope="col">Edad</th>
+      <th scope="col">Tipo Agente Vial</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var ciudadano in Model.Ciudadanos)
+    {
+        <tr>
+            <td>@ciudadano.Id</td>
+            <td>@ciudadano.Nombre</td>
+            <td>@ciudadano.Sexo</td>
+            <td>@ciudadano.Edad</td>
+            <td>@ciudadano.TipoAgenteVial</td>
+         
+        </tr>
+    }
+  </tbody>
+</table>

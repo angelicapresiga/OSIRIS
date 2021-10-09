@@ -7,6 +7,7 @@ namespace ReporteAccidente.App.Persistencia
 
     public interface IRepositorioAccidenteCiudadano
     {
+        
         IEnumerable<AccidenteCiudadano> GetAllAccidenteCiudadanos();
         AccidenteCiudadano AddAccidenteCiudadano(AccidenteCiudadano accidenteCiudadano);
         AccidenteCiudadano UpdateAccidenteCiudadano(AccidenteCiudadano accidenteCiudadano);

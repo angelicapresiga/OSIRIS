@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReporteAccidente.App.Dominio\ReporteAccidente.APP.Dominio.csproj" />
+    <ProjectReference Include="..\ReporteAccidente.App.Persistencia\ReporteAccidente.APP.Persistencia.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>

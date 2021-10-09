@@ -3,7 +3,8 @@ using ReporteAccidente.App.Dominio;
 namespace ReporteAccidente.App.Persistencia
 {
     public interface IRepositorioVehiculo
-    {
+    {   
+        IEnumerable<Vehiculo> Obtener();
         IEnumerable<Vehiculo> GetAllVehiculos();
         Vehiculo AddVehiculo(Vehiculo vehiculo);
         Vehiculo UpdateVehiculo(Vehiculo vehiculo);

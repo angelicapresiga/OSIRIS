@@ -1,0 +1,27 @@
+﻿@page
+@model ReporteAccidente.App.Frontend.pages.ReporteVehiculoModel
+@{
+}
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Placa</th>
+      <th scope="col">Marca</th>
+      <th scope="col">Modelo</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var vehiculo in Model.Vehiculos)
+    {
+        <tr>
+            <td>@vehiculo.Id</td>
+            <td>@vehiculo.Placa</td>
+            <td>@vehiculo.Marca</td>
+            <td>@vehiculo.Modelo</td>
+            
+        </tr>
+    }
+  </tbody>
+</table>
