@@ -13,7 +13,7 @@
     </tr>
   </thead>
   <tbody>
-    @foreach (var vehiculo in Model.Vehiculos)
+    @foreach (var vehiculo in Model.vehiculos)
     {
         <tr>
             <td>@vehiculo.Id</td>
@@ -29,3 +29,4 @@
     }
   </tbody>
 </table>
+<a asp-page=".\EditVehiculo" class="btn btn-primary">Adicionar Vehiculo</a>

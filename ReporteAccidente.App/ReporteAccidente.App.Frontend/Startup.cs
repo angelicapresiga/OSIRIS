@@ -25,9 +25,10 @@ namespace ReporteAccidente.App.Frontend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddSingleton<IRepositorioAccidente, RepositorioAccidente>();
-            services.AddSingleton<IRepositorioCiudadano, RepositorioCiudadano>();
-            services.AddSingleton<IRepositorioVehiculo, RepositorioVehiculo>();
+            services.AddDbContext<ReporteAccidente.App.Persistencia.AppContext>();
+            services.AddScoped<IRepositorioAccidente, RepositorioAccidente>();
+            services.AddScoped<IRepositorioCiudadano, RepositorioCiudadano>();
+            services.AddScoped<IRepositorioVehiculo, RepositorioVehiculo>();
 
         }
 

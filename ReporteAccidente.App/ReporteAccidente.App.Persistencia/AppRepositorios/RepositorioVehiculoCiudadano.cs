@@ -34,6 +34,10 @@ namespace ReporteAccidente.App.Persistencia
 
         }
 
+        IEnumerable<VehiculoCiudadano> IRepositorioVehiculoCiudadano.GetFiltroVehiculoCiudadano(int idCiudadano)
+        {
+            return _appContext.VehiculoCiudadanos.Where(p => p.IdCiudadano==idCiudadano).ToList();
+        }
         VehiculoCiudadano IRepositorioVehiculoCiudadano.GetVehiculoCiudadano(int idVehiculoCiudadano)
         {
             return _appContext.VehiculoCiudadanos.FirstOrDefault(p => p.Id==idVehiculoCiudadano);

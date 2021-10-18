@@ -6,21 +6,17 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ReporteAccidente.App.Persistencia;
 using ReporteAccidente.App.Dominio;
+
 namespace ReporteAccidente.App.Frontend.pages
 {
     public class ReporteVehiculoModel : PageModel
     {
-        private readonly IRepositorioVehiculo repositorioVehiculo;
-        private static IRepositorioVehiculo _repoVehiculo = new RepositorioVehiculo(new Persistencia.AppContext());
-        public IEnumerable<Vehiculo> Vehiculos{get;set;}
+        
+        private readonly IRepositorioVehiculo repoVehiculo = new RepositorioVehiculo(new Persistencia.AppContext());
+       
+        public IEnumerable<Vehiculo> vehiculos{get;set;}
 
-        public ReporteVehiculoModel(IRepositorioVehiculo repositorioVehiculo)
-        {
-            this.repositorioVehiculo=repositorioVehiculo;
-        }
-        public void OnGet()
-        {
-            Vehiculos=_repoVehiculo.GetAllVehiculos();
-        }
+
+        public void OnGet() => vehiculos = repoVehiculo.GetAllVehiculos();
     }
 }

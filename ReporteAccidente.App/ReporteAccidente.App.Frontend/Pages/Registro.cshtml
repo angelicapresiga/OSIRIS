@@ -2,3 +2,39 @@
 @model ReporteAccidente.App.Frontend.pages.RegistroModel
 @{
 }
+<h3>Msg: @Model.Message</h3>
+<input type="hidden" asp-for="accidente.Id"/>
+     
+    <div class="form-group">
+        <label asp-for="accidente.IdAgente"></label>
+        <input asp-for="accidente.IdAgente" class="form-control" disabled>
+        
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="accidente.Latitud"></label>
+        <input asp-for="accidente.Latitud" class="form-control" disabled>
+       
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="accidente.Longitud"></label>
+        <input asp-for="accidente.Longitud" class="form-control" disabled>
+       
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="accidente.Direccion"></label>
+        <input asp-for="accidente.Direccion" class="form-control" disabled>
+      
+    </div>
+     <div class="form-group">
+        <label asp-for="accidente.Fecha"></label>
+        <input asp-for="accidente.Fecha" class="form-control" disabled>
+        
+    </div>
+      <div class="form-group">
+        <label asp-for="accidente.Hora"></label>
+        <input asp-for="accidente.Hora" class="form-control" disabled>
+        
+    </div>

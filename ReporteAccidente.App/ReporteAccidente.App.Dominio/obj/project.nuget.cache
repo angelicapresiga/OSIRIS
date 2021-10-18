@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NVhWtAgdFUJgbuP2HC2VHHgd+xPboAJkmbAl+zIxk07h593YyF5S5UVvQnh7NXL6SLJRLjY6JvDnaC3QaeOGXQ==",
+  "dgSpecHash": "JwbogJJ5IpbYJnIy7y8Fuu+/yA8+Ig/Jh//ALhVKFyJIedYjUSJ7AIoWwUWrjbOXYpMJf5DXsQlwLRYRAd3PVw==",
   "success": true,
   "projectFilePath": "C:\\Reportes\\OSIRIS-1\\ReporteAccidente.App\\ReporteAccidente.App.Dominio\\ReporteAccidente.APP.Dominio.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

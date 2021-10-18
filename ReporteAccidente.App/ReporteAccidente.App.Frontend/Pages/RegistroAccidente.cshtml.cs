@@ -11,19 +11,14 @@ namespace ReporteAccidente.App.Frontend.Pages
 {
     public class RegistroAccidenteModel : PageModel
     {
-        private readonly IRepositorioAccidente repositorioAccidente;
-        private static IRepositorioAccidente _repoAccidente = new RepositorioAccidente(new Persistencia.AppContext());
+        
+        private readonly IRepositorioAccidente repoAccidente = new RepositorioAccidente(new Persistencia.AppContext());
         public IEnumerable<Accidente> Accidentes{get;set;}
 
-        public RegistroAccidenteModel(IRepositorioAccidente repositorioAccidente)
-        {
-            this.repositorioAccidente=repositorioAccidente;
-        }
 
-        public void OnGet()
-        {
-            Accidentes=_repoAccidente.GetAllAccidentes();
-
+        public void OnGet() 
+        { 
+            Accidentes = repoAccidente.GetAllAccidentes();
         }
     }
 }

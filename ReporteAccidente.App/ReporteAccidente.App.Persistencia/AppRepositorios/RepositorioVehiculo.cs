@@ -4,10 +4,14 @@ using System.Linq;
 
 namespace ReporteAccidente.App.Persistencia
 {
-
+    
     public class RepositorioVehiculo:IRepositorioVehiculo
     {
-        
+        List<Vehiculo> vehiculos;
+        public RepositorioVehiculo()
+        {
+
+        }
         private readonly AppContext _appContext;
         public RepositorioVehiculo(AppContext appContext)
         {

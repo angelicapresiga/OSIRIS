@@ -12,20 +12,23 @@ namespace ReporteAccidente.App.Frontend.Pages
     public class EditCiudadanoModel : PageModel
     {
         private readonly IRepositorioCiudadano repositorioCiudadano;
-         private static IRepositorioCiudadano _repoCiudadano = new RepositorioCiudadano(new Persistencia.AppContext());
-
-       [BindProperty]
+        [BindProperty]
         public Ciudadano ciudadano { get; set; }
-             
-        public EditCiudadanoModel(IRepositorioCiudadano repositorioCiudadano)
-        {
-            this.repositorioCiudadano = repositorioCiudadano;
-        }
+              
 
-        public IActionResult OnGet(int ciudadanoId)
+        public EditCiudadanoModel(IRepositorioCiudadano repositorioCiudadano) => this.repositorioCiudadano = repositorioCiudadano;
+
+        public IActionResult OnGet(int? ciudadanoId)
         {
-            ciudadano = _repoCiudadano.GetCiudadano(ciudadanoId);
-            if (ciudadanoId == null)
+             if(ciudadanoId.HasValue)
+            {
+                ciudadano = repositorioCiudadano.GetCiudadano(ciudadanoId.Value);
+            }
+            else
+            {
+                ciudadano= new Ciudadano();
+            }
+            if (ciudadano == null)
             {
                 return RedirectToPage("./NotFound");
             }
@@ -37,7 +40,18 @@ namespace ReporteAccidente.App.Frontend.Pages
 
         public IActionResult OnPost()
         {
-            ciudadano = _repoCiudadano.UpdateCiudadano(ciudadano);
+            if(!ModelState.IsValid)
+            {
+                return Page();
+            }
+             if(ciudadano.Id>0)
+            {
+             ciudadano = repositorioCiudadano.UpdateCiudadano(ciudadano);
+            }
+            else
+            {
+                repositorioCiudadano.AddCiudadano(ciudadano);
+            }
             return Page();
         }
     }

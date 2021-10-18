@@ -7,7 +7,11 @@ namespace ReporteAccidente.App.Persistencia
 
     public class RepositorioCiudadano:IRepositorioCiudadano
     {
-              
+        List<Ciudadano> ciudadanos;
+        public RepositorioCiudadano()
+        {
+            
+        }  
         private readonly AppContext _appContext;
         public RepositorioCiudadano(AppContext appContext)
         {

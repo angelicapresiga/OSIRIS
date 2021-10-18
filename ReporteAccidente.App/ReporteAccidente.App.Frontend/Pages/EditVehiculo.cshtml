@@ -9,16 +9,19 @@
     <div class="form-group">
         <label asp-for="vehiculo.Placa"></label>
         <input asp-for="vehiculo.Placa" class="form-control">
+        <span class="text-danger" asp-validation-for="vehiculo.Placa"></span>
     </div>
     
     <div class="form-group">
         <label asp-for="vehiculo.Marca"></label>
         <input asp-for="vehiculo.Marca" class="form-control">
+        <span class="text-danger" asp-validation-for="vehiculo.Marca"></span>
     </div>
     
     <div class="form-group">
         <label asp-for="vehiculo.Modelo"></label>
         <input asp-for="vehiculo.Modelo" class="form-control">
+        <span class="text-danger" asp-validation-for="vehiculo.Modelo"></span>
     </div>
     
     <button type="submit" class="btn btn-primary">Editar</button>

@@ -9,30 +9,36 @@
     <div class="form-group">
         <label asp-for="accidente.IdAgente"></label>
         <input asp-for="accidente.IdAgente" class="form-control">
+        <span class="text-danger" asp-validation-for="accidente.IdAgente"></span>
     </div>
     
     <div class="form-group">
         <label asp-for="accidente.Latitud"></label>
         <input asp-for="accidente.Latitud" class="form-control">
+        <span class="text-danger" asp-validation-for="accidente.Latitud"></span>
     </div>
     
     <div class="form-group">
         <label asp-for="accidente.Longitud"></label>
         <input asp-for="accidente.Longitud" class="form-control">
+        <span class="text-danger" asp-validation-for="accidente.Longitud"></span>
     </div>
     
     <div class="form-group">
         <label asp-for="accidente.Direccion"></label>
         <input asp-for="accidente.Direccion" class="form-control">
+        <span class="text-danger" asp-validation-for="accidente.Direccion"></span>
     </div>
      <div class="form-group">
         <label asp-for="accidente.Fecha"></label>
         <input asp-for="accidente.Fecha" class="form-control">
+        <span class="text-danger" asp-validation-for="accidente.Fecha"></span>
     </div>
       <div class="form-group">
         <label asp-for="accidente.Hora"></label>
         <input asp-for="accidente.Hora" class="form-control">
+        <span class="text-danger" asp-validation-for="accidente.Hora"></span>
     </div>
-    <button type="submit" class="btn btn-primary">Editar</button>
+    <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 <a asp-page="./RegistroAccidente" class="btn-default">Reporte Accidentes</a>

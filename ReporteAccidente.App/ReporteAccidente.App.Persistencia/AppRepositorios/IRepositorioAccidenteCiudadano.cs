@@ -9,6 +9,7 @@ namespace ReporteAccidente.App.Persistencia
     {
         
         IEnumerable<AccidenteCiudadano> GetAllAccidenteCiudadanos();
+        IEnumerable<AccidenteCiudadano> GetFiltroAccidenteCiudadanos(int idCiudadano);
         AccidenteCiudadano AddAccidenteCiudadano(AccidenteCiudadano accidenteCiudadano);
         AccidenteCiudadano UpdateAccidenteCiudadano(AccidenteCiudadano accidenteCiudadano);
         void DeleteAccidenteCiudadano(int idAccidenteCiudadano);

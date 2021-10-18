@@ -6,14 +6,26 @@
 
 
 <div class="login-page">
-            <div class="form">
-                <form class="login-form">
-                                <input type="text" placeholder="Nombre Agente"/>
-                                <input type="password" placeholder="ID"/>
-                                <button>login</button>
+
+  @{
+    if(!string.IsNullOrEmpty(@Model.Message))
+    {
+        <div class="alert alert-warning">@Model.Message</div>
+    }
+
+  }
+            <div class="form" >
+                <form class="login-form"  method="post">
+                                <input type="text" name="nombre" asp-for="agente.Nombre" placeholder="Nombre Agente"/>
+                                <span class="text-danger" asp-validation-for="agente.Nombre"></span>
+                                <input type="password" name="id" asp-for="agente.Id" placeholder="ID"/>
+                                <span class="text-danger" asp-validation-for="agente.Id"></span>
+                                <button type="submit">login</button>
                                
                 </form>
+                 
             </div>
+           
 </div>
 <style type="text/css">
     .form {

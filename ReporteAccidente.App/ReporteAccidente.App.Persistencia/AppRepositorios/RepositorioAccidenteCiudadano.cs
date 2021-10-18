@@ -33,7 +33,12 @@ namespace ReporteAccidente.App.Persistencia
             return _appContext.AccidenteCiudadanos;
 
         }
+       
+        IEnumerable<AccidenteCiudadano> IRepositorioAccidenteCiudadano.GetFiltroAccidenteCiudadanos(int idCiudadano)
+        {
 
+            return _appContext.AccidenteCiudadanos.Where(p =>p.IdAccidente== idCiudadano).ToList();
+        }
         AccidenteCiudadano IRepositorioAccidenteCiudadano.GetAccidenteCiudadano(int idAccidenteCiudadano)
         {
             return _appContext.AccidenteCiudadanos.FirstOrDefault(p => p.Id==idAccidenteCiudadano);

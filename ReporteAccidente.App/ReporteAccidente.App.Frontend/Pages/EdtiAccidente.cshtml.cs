@@ -11,20 +11,28 @@ namespace ReporteAccidente.App.Frontend.Pages
 {
     public class EdtiAccidenteModel : PageModel
     {
-        private readonly IRepositorioAccidente repositorioAccidente;
+        
+        private readonly IRepositorioAccidente repositorioAccidente; 
         private static IRepositorioAccidente _repoAccidente = new RepositorioAccidente(new Persistencia.AppContext());
-       [BindProperty]
+        [BindProperty]
         public Accidente accidente { get; set; }
-             
-        public EdtiAccidenteModel(IRepositorioAccidente repositorioAccidente)
+        public EdtiAccidenteModel(IRepositorioAccidente repositorioAccidente )
         {
-            this.repositorioAccidente = repositorioAccidente;
+            this.repositorioAccidente=repositorioAccidente;
         }
 
-        public IActionResult OnGet(int accidenteId)
-        {
-            accidente = _repoAccidente.GetAccidente(accidenteId);
-            if (accidenteId == null)
+        public IActionResult OnGet(int? accidenteId)
+        {   
+           
+            if(accidenteId.HasValue)
+            {
+                 accidente = _repoAccidente.GetAccidente(accidenteId.Value);
+            }
+            else
+            {
+                accidente= new Accidente();
+            }
+            if (accidente == null)
             {
                 return RedirectToPage("./NotFound");
             }
@@ -36,7 +44,18 @@ namespace ReporteAccidente.App.Frontend.Pages
 
         public IActionResult OnPost()
         {
-            accidente = _repoAccidente.UpdateAccidente(accidente);
+             if(!ModelState.IsValid)
+            {
+                return Page();
+            }
+            if(accidente.Id>0)
+            {
+                accidente = _repoAccidente.UpdateAccidente(accidente);
+            }
+            else
+            {
+                _repoAccidente.AddAccidente(accidente);
+            }
             return Page();
         }
     }
